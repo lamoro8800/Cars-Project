@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- <?php 
+    session_start();
+    include("connection.php");
+    include("functions.php");
+    $user_data = check_login($con);
+?> -->
+
+<html>
+<head>
+    <title>Feedback</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); </style>
+    <header>
+        <a href="index.html" class="logo"><img src="img/jeep.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <form method="post">
+        <div class="feedback-container">
+            <div class="feedback-header-container">
+                <h2 class="feedback-header">Thank you for taking part</h2>
+                <h3 class="feedback-subheader">Please complete this document to help us improve future sessions.</h3>
+            </div>
+            <div id="input-container">
+                <p>Name</p>
+                <input id="text" type="text" name="name" value="">
+            </div>
+            <div id="input-container">
+                <p>Phone</p>
+                <input id="text" type="text" name="phone" placeholder="Enter your phone number">
+            </div>
+            <div id="input-container">
+                <p>Email</p>
+                <input id="text" type="text" name="email" value="">
+            </div>
+            <div id="input-container">
+                <p>Message</p>
+                <textarea id="text" type="text" name="message" placeholder="Share with us your opinion..."></textarea>
+            </div>
+            
+            <div class="feedback-btns">
+                <input type="submit" name="btn" class="feedback-btn btn">
+                <button type="reset" class="feedback-btn btn">Reset</button>
+            <div>
+            <span class="feedback-popup-text">
+                <!-- <?php 
+                    if (isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['email']) && isset($_POST['message'])){
+                        include 'db_conn.php';
+
+                        function validate($data){
+                            $data = trim($data);
+                            $data = stripslashes($data);
+                            $data = htmlspecialchars($data);
+                            return $data;
+                        }
+
+                        $name = validate($_POST['name']);
+                        $phone = validate($_POST['phone']);
+                        $email = validate($_POST['email']);
+                        $message = validate($_POST['message']);
+                        
+                        if (empty($message) || empty($name) || empty($phone) || empty($email)){
+                            echo "Please fill all fields!";
+                        } else {
+                            $sql = "INSERT INTO test(name, phone, email, message) VALUES('$name' , '$phone' , '$email', '$message')";
+                            $res = mysqli_query($conn, $sql);
+
+                            if($res){
+                                echo "Your message was sent successfully!";
+                            } else {
+                                echo "Your messsage could not be sent, please try again";
+                            }
+                        }
+                    }
+                ?> -->
+        </div>
+    </form>
+</body>
+</html>

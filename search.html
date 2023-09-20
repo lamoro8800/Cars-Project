@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Bar using PHP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); </style>
+    <header>
+        <a href="index.html" class="logo"><img src="img/jeep.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <form method="post" id="search-form">
+        <!-- <label>Search</label>
+        <input type="text" name="search" id="text"> -->
+        <div id="input-container">
+            <input type="text" name="search" id="text" placeholder="Search for a car">
+            <button type="submit" name="submit" class="btn">Search</button>
+        </div>
+    </form>
+
+<!-- <?php
+$con = new PDO("mysql:host=localhost;dbname=Cars",'root','');  // Data Base Name
+
+if (isset($_POST["submit"])) {  // Input Name 
+$str = $_POST["search"];  // Input Name
+    $sth = $con->prepare("SELECT * FROM `cars_info` WHERE Car_Name LIKE '%$str%'");  // Table column
+
+    $sth->setFetchMode(PDO::FETCH_OBJ);
+    $sth->execute();
+
+    if($sth->rowCount() > 0)
+    {
+        ?>
+        <table id="search-table">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr> -->
+            <!-- <?php while($row = $sth->fetch()) { ?> -->
+
+            <!-- <tr> -->
+                <!-- <td><?php echo $row->Car_Name; ?></td>  Table column  -->
+                <!-- <td><?php echo $row->Car_Description;?></td>  Table column  -->
+            <!-- </tr> -->
+            <!-- <?php } ?> -->
+
+        <!-- </table>
+    <?php 
+    } else {
+        echo "No results found";
+    }
+}
+
+?> -->
+</body>
+</html>

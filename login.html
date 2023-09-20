@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); </style>
+	<header>
+        <a href="index.html" class="logo"><img src="img/jeep.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+	<div id="signup">
+		<form method="post">
+			<h2 id="header">Login to Your Account</h2>
+			<div id="input-container">
+				<p>Username</p>
+				<input id="text" type="text" name="user_name" placeholder="Enter your Username">
+			<div>
+			<div id="input-container">
+				<p>Password</p>
+				<input id="text" type="password" name="password" placeholder="Enter your Password">
+			<div>
+			<div class="submit-btn-container">
+				<input type="submit" value="Login" name="" id="" class="btn">
+				<a href="signup.html" class="btn margin-left">Go to Signup</a>
+			</div>
+			<div class="php">
+				<?php
+					session_start();
+
+					include("connection.php");
+					include("functions.php");
+
+
+					if($_SERVER['REQUEST_METHOD'] == "POST")
+					{
+						//something was posted
+						$user_name = $_POST['user_name'];
+						$email = $_POST['email'];
+						$password = $_POST['password'];
+
+						if(!empty($user_name) && !empty($password) && !is_numeric($user_name) && !empty($email))
+						{
+
+							//save to database
+							$user_id = random_num(20);
+							$query = "insert into users (user_id,user_name,password,email) values ('$user_id','$user_name','$password','$email')";
+
+							mysqli_query($con, $query);
+
+							header("Location: login.php");
+							die;
+						}else
+						{
+							echo "Please enter some valid information!";
+						}
+					}
+				?>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+<br>
