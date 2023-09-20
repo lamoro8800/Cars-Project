@@ -6,8 +6,8 @@ This project was part of our second-semester coursework, and I played a key role
 **Project Features:**
 
 
-
-<strong>User Registration and Authentication:</strong> Users can sign up for accounts and log in securely, allowing for a personalized experience.
+Markup: 
+*<strong>User Registration and Authentication:</strong> Users can sign up for accounts and log in securely, allowing for a personalized experience.
 <strong>Search Tool:</strong> The project features robust search functionality that enables users to find cars based on various criteria such as make, model, year, and price range.
 <strong>Feedback Tool:</strong> We incorporated a feedback mechanism to gather user opinions and improve the website continuously.
 Technology Stack:
