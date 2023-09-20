@@ -2,7 +2,7 @@
 
 # A first-level heading
 ## A second-level heading
-### A third-level heading
+
 This project was part of our second-semester coursework, and I played a key role as a front-end team member. Our primary objective was to create a user-friendly platform for displaying information about cars.
 
 ### Project Features:
