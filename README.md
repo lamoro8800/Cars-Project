@@ -12,4 +12,4 @@ Technology Stack:
 <strong>Front-end Technologies:</strong> We utilized HTML, CSS, and JavaScript to create an engaging and responsive user interface.
 <strong>Back-end Technologies:</strong> The server-side logic was developed using PHP, and data storage was managed using SQL databases.
 
-This site was built using [PROJECT LINK](https://lamoro8800.github.io/Cars-Rent-Project/#home/).
+This site was built using [PROJECT LINK](https://lamoro8800.github.io/Cars-Project/).
