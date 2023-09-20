@@ -11,4 +11,4 @@ This project was part of our second-semester coursework, and I played a key role
 + **Front-end Technologies:** We utilized HTML, CSS, and JavaScript to create an engaging and responsive user interface.
 + **Back-end Technologies:** The server-side logic was developed using PHP, and data storage was managed using SQL databases.
 
-This site was built using [PROJECT LINK](https://lamoro8800.github.io/Cars-Project/).
+The project is deployed. [PROJECT LINK](https://lamoro8800.github.io/Cars-Project/).
