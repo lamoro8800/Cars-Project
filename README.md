@@ -2,7 +2,9 @@
 This project was part of our second-semester coursework, and I played a key role as a front-end team member. Our primary objective was to create a user-friendly platform for displaying information about cars.
 
 # Project Features:
-
+- George Washington
+* John Adams
++ Thomas Jefferson
 
 *<strong>User Registration and Authentication:</strong> Users can sign up for accounts and log in securely, allowing for a personalized experience.
 <strong>Search Tool:</strong> The project features robust search functionality that enables users to find cars based on various criteria such as make, model, year, and price range.
