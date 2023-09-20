@@ -5,7 +5,7 @@
 
 This project was part of our second-semester coursework, and I played a key role as a front-end team member. Our primary objective was to create a user-friendly platform for displaying information about cars.
 
-### Project Features:
+# Project Features:
 
 
 *<strong>User Registration and Authentication:</strong> Users can sign up for accounts and log in securely, allowing for a personalized experience.
